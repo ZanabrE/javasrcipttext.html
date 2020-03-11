@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+Ernesto L Zanabria. Thursday, February 27, 2020.
+-->
+
+
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Test Page</title>
+	<link rel="stylesheet" href="test.css" type="text/css">
+	
+</head>
+
+
+<html lang="en">
+<body>
+	<section>
+		<h1>Running External Javascript</h1>
+		<p> This simple web page is designed to let you experimentally run some code in your external JavaScript file. </p>
+	
+		<p id="target">This is just a boring paragraph. </p>
+
+		<p>
+			<button type="button" onclick="doProblem1()">Run Problem 1 Code</button></a>
+		
+		</p>
+		<p>
+			<button type="button" onclick="doProblem2()">Run Problem 2 Code</button>
+		</p>
+		<p>
+			<button type="button" onclick="doProblem3()">Run Problem 3 Code</button>
+		</p>
+		<p>
+			<button type="button" onclick="doProblem4()">Run Problem 4 Code</button>
+		</p>
+
+		<p><strong>Important:</strong> These functions will be stored in an external file called "test.js".</p>
+
+		<script type="text/javascript" src="test.js"></script>
+	</section>
+	
+	<footer class='footer'>
+		<br>
+		<p>Copyright &copy; 2020 Ernesto L Zanabria, All Rights Reserved. COMMUNITY COLLEGE OF RHODE ISLAND</p>
+	</footer>
+
+</body>
+</html>

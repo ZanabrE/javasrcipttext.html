@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <!--
 Ernesto L Zanabria. Thursday, February 27, 2020.
 -->
@@ -12,7 +13,7 @@ Ernesto L Zanabria. Thursday, February 27, 2020.
 </head>
 
 
-<html lang="en">
+
 <body>
 	<section>
 		<h1>Running External Javascript</h1>
@@ -21,7 +22,7 @@ Ernesto L Zanabria. Thursday, February 27, 2020.
 		<p id="target">This is just a boring paragraph. </p>
 
 		<p>
-			<button type="button" onclick="doProblem1()">Run Problem 1 Code</button></a>
+			<button type="button" onclick="doProblem1()">Run Problem 1 Code</button>
 		
 		</p>
 		<p>
@@ -36,7 +37,7 @@ Ernesto L Zanabria. Thursday, February 27, 2020.
 
 		<p><strong>Important:</strong> These functions will be stored in an external file called "test.js".</p>
 
-		<script type="text/javascript" src="test.js"></script>
+		<script src="test.js"></script>
 	</section>
 	
 	<footer class='footer'>

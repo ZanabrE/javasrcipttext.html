@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+Ernesto L Zanabria. Thursday, February 27, 2020.
+-->
+<!-- I changed the name of this file so that the browser and my IDE know it's html -->
+
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Test Page</title>
+	<link rel="stylesheet" href="test.css" type="text/css">
+	
+</head>
+
+
+
+<body>
+	<section>
+		<h1>Running External Javascript</h1>
+		<p> This simple web page is designed to let you experimentally run some code in your external JavaScript file. </p>
+	
+		<p id="target">This is just a boring paragraph. </p> <!-- "target" is a bad name for an id because it's a property of event objects. this can get confusing if you have a page that makes use of event handlers. -->
+<!-- this onclick stuff works here, but best practices would have you do this in JavaScript instead of html -->
+		<p>
+			<button type="button" onclick="doProblem1()">Run Problem 1 Code</button> <!-- this doesn't work because of the way this function is declared in test.js -->
+		
+		</p>
+		<p>
+			<button type="button" onclick="doProblem2()">Run Problem 2 Code</button>
+		</p>
+		<p>
+			<button type="button" onclick="doProblem3()">Run Problem 3 Code</button>
+		</p>
+		<p>
+			<button type="button" onclick="doProblem4()">Run Problem 4 Code</button>
+		</p>
+
+		<p><strong>Important:</strong> These functions will be stored in an external file called "test.js".</p>
+
+		<script src="test.js"></script>
+	</section>
+	
+	<footer class='footer'>
+		<br> <!-- break tags are fine, but not great practice. Try using CSS to get the results you want here. -->
+		<p>Copyright &copy; 2020 Ernesto L Zanabria, All Rights Reserved. COMMUNITY COLLEGE OF RHODE ISLAND</p>
+	</footer>
+
+</body>
+</html>
